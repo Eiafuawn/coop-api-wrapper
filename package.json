@@ -1,0 +1,49 @@
+{
+  "name": "coop-api-wrapper",
+  "version": "0.0.0",
+  "license": "MIT",
+  "description": "Coop API wrapper",
+  "keywords": [],
+  "author": "Eiafuawn",
+  "type": "module",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "clean": "rimraf coverage lib",
+    "eslint": "eslint .",
+    "eslint-fix": "eslint . --fix",
+    "prepack": "npm run tsc",
+    "prettier": "prettier --check .",
+    "prettier-write": "prettier --write .",
+    "test": "npm run test-only && npm run check-types && npm run eslint && npm run prettier",
+    "test-only": "vitest run --coverage",
+    "tsc": "npm run clean && npm run tsc-build",
+    "tsc-build": "tsc --project tsconfig.build.json"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@vitest/coverage-v8": "^4.0.14",
+    "@zakodium/tsconfig": "^1.0.2",
+    "eslint": "^9.39.1",
+    "eslint-config-cheminfo-typescript": "^21.0.1",
+    "prettier": "^3.6.2",
+    "rimraf": "^6.1.2",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com//coop-api-wrapper.git"
+  },
+  "bugs": {
+    "url": "https://github.com//coop-api-wrapper/issues"
+  },
+  "homepage": "https://github.com//coop-api-wrapper#readme"
+}
