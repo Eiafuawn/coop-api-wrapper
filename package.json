@@ -1,10 +1,10 @@
 {
   "name": "coop-api-wrapper",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "description": "Coop API wrapper",
   "keywords": [],
-  "author": "Eiafuawn",
+  "author": "myshkin",
   "type": "module",
   "exports": {
     ".": "./lib/index.js"
